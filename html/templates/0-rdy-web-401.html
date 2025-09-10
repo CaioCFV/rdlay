@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+  lang="pt-br"
+>
+  <head>
+    <vtex:metaTags />
+    <meta name="controller" content="Home" />
+
+    <!-- START - Subtemplate Metatags -->
+    <vtex:template id="0-rdy-web-metatags" />
+    <!-- END - Subtemplate Metatags -->
+
+    <!-- START - Style e Subtemplate Styles -->
+    <vtex:template id="0-rdy-web-styles" />
+    <!-- END - Subtemplate Styles -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  	<div class="welcomeMessage" style="display: none;"><vtex.cmc:welcomeMessage/></div>
+  	
+    <div class="tpl-wrapper">
+			<!-- HEADER -->
+			<div class="header">
+				<div class="tpl-center">
+					<h1 class="logo">
+	                    <a href="/">
+	                        <img src="/arquivos/0-rdy-icone-logordlay-cinza.png" alt="Logo R.D.Lay" class="cor cinza" />
+	                    </a>
+	                </h1><!-- FIM LOGO -->
+
+	                <!--button class="bt login">Login</button-->
+				</div>
+			</div>
+
+			<!-- MAIN -->
+			<main id="main">
+
+				<div class="tpl-content">
+				
+					<div class="bemVindo">
+						<div class="tpl-center">
+							<h2>Seja bem-vindo ao canal de venda <br/>exclusiva ao Lojista R.D.Lay</h2>
+							<p>Para comprar com valor de atacado, faça seu login ou cadastre-se.</p>
+
+							<div class="opcoes">
+								<div class="opcao entrar">
+									<strong>Entrar</strong>
+
+									<button class="bt entrar login">Entrar</button>
+								</div>
+
+								<div class="linha"></div>
+
+								<div class="opcao cadastro">
+									<strong>Cadastrar</strong>
+
+									<button class="bt cadastro">Quero me cadastrar</button>
+								</div>
+							</div>
+						</div>
+					</div><!-- fim benvindo-->
+
+					<div class="queTipo">
+						<div class="tpl-center">
+							<h2 class="titulo">Qual tipo de cadastro deseja realizar?</h2>
+
+							<div class="opcoes">
+								<button class="bt fisica">Pessoa física</button>
+								<button class="bt juridica">Pessoa jurídica</button>
+							</div>
+						</div>
+					</div><!-- fim queTipo -->
+
+					<form class="form fisica">
+						<div class="tpl-center">
+							<div class="dadosResponsavel">
+								<strong class="titulo-sessao">Dados pessoa física</strong>
+
+								<div class="wrap">
+									<div class="duplo email">
+										<input type="text" name="email" placeholder="E-mail*" class="input"/>
+									</div>
+
+									<div class="duplo emailacesso">
+										<em>*Será o e-mail de acesso à loja</em>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo nome">
+										<input type="text" name="firstName" placeholder="Primeiro nome*" class="input"/>
+									</div>
+
+									<div class="duplo sobrenome">
+										<input type="text" name="lastName" placeholder="Último nome*" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo birthDate">
+										<input type="text" name="birthDate" placeholder="Data de nascimento*" class="input"/>
+									</div>
+
+									<!-- <div class="duplo rg">
+										<input type="text" name="rg" placeholder="RG*" class="input"/>
+									</div> -->
+
+									<div class="duplo document">
+										<input type="text" name="document" placeholder="CPF*" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo phone">
+										<input type="text" name="phone" placeholder="Celular(celular/whatsapp)*" class="input"/>
+									</div>
+
+									<div class="duplo homePhone">
+										<input type="text" name="homePhone" placeholder="Telefone" class="input"/>
+									</div>
+								</div>
+							</div><!-- fim dadosResponsavel-->
+
+							<div class="dadosEndereco">
+								<strong class="titulo-sessao">Endereço</strong>
+
+								<div class="wrap">
+									<div class="duplo cep">
+										<input type="text" placeholder="CEP*" name="postalCode" class="input"/>
+									</div>
+
+									<div class="duplo numero">
+										<input type="text" placeholder="Número*" name="number" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo endereco">
+										<input type="text" placeholder="Endereço*" name="street" class="input"/>
+									</div>
+
+									<div class="duplo complemento">
+										<input type="text" placeholder="Complemento e Referência" name="complement" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo bairro">
+										<input type="text" placeholder="Bairro*" name="neighborhood" class="input"/>
+									</div>
+
+									<div class="duplo cidade">
+										<input type="text" placeholder="Cidade*" name="city" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo UF">
+										<input type="text" placeholder="Estado*" name="state" maxlength="2" class="input"/>
+									</div>
+
+									<div class="duplo receiverName">
+										<input type="text" placeholder="Destinatário" name="receiverName" class="input"/>
+									</div>
+								</div>
+
+							</div><!-- fim dadosEndereco -->
+
+							<div class="dadosPerguntas">
+								<div class="wrap">
+									<div class="unico">
+										<div class="mensagem">Aguarde...</div>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="unico">
+										<button class="bt enviar">Enviar Cadastro</button>
+									</div>
+								</div>
+							</div><!-- fim dadosPerguntas -->
+
+							<!--div class="dadosPerguntas">
+								<strong class="titulo-sessao">Informações</strong>
+
+								<div class="wrap">
+									<div class="duplo quaisLojas">
+										<input type="text" placeholder="De quais lojas costuma comprar para revender?" name="quaisLojas" class="input"/>
+									</div>
+
+									<div class="duplo paraQuem">
+										<input type="text" placeholder="Para quem costuma revender?" name="paraQuem" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo linhaProduto">
+										<label>Qual linha de produto procura?</label>
+										
+										<button class="check" label="Feminino">
+											<span></span>
+											<label>Feminino</label>
+										</button>
+
+										<button class="check" label="Masculino">
+											<span></span>
+											<label>Masculino</label>
+										</button>
+
+										<button class="check" label="Fitness">
+											<span></span>
+											<label>Fitness</label>
+										</button>
+
+										<button class="check" label="Moda Praia">
+											<span></span>
+											<label>Moda Praia</label>
+										</button>
+
+										<button class="check" label="Infantil">
+											<span></span>
+											<label>Infantil</label>
+										</button>
+									</div>
+
+									<div class="duplo news">
+										<label>Newsletter</label>
+										<button class="check ativo" label="News">
+											<span></span>
+											<label>Deseja receber novidades e promoções por e-mail?</label>
+										</button>
+									</div>
+								</div>
+									
+								<div class="wrap">
+									<div class="unico">
+										<div class="mensagem">Aguarde...</div>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="unico">
+										<button class="bt enviar">Enviar Cadastro</button>
+									</div>
+								</div>	
+							</div fim dadosPerguntas -->
+						</div>
+					</form><!-- fim form pessoa fisica -->
+
+
+					<!-- //// **** \\\\ -->
+
+
+					<form class="form juridica">
+						<div class="tpl-center">
+							<div class="dadosJuridica">
+								<strong class="titulo-sessao">Dados pessoa jurídica</strong>
+
+								<div class="wrap">
+									<div class="duplo email">
+										<input type="text" name="email" placeholder="E-mail*" class="input"/>
+									</div>
+
+									<div class="duplo emailacesso">
+										<em>*Será o e-mail de acesso à loja</em>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo razaosocial">
+										<input type="text" placeholder="Razão Social*" name="corporateName" class="input"/>
+									</div>
+
+									<div class="duplo nomefantasia">
+										<input type="text" placeholder="Nome Fantasia*" name="tradeName" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo businessPhone">
+										<input type="text" placeholder="Telefone*" name="businessPhone" class="input"/>
+									</div>
+
+									<div class="duplo stateRegistration">
+										<input type="text" placeholder="Inscrição estadual*" name="stateRegistration" class="input"/>
+
+										<button class="isento">
+											<span></span>
+											<label>Isento</label>
+										</button>
+									</div>
+
+									<!-- <div class="duplo icms">
+										<input type="text" placeholder="É contribuinte do ICMS?" name="icms" class="input"/>
+									</div> -->
+								</div>
+
+								<div class="wrap">
+									<div class="duplo corporateDocument">
+										<input type="text" placeholder="CNPJ*" name="corporateDocument" class="input"/>
+									</div>
+								</div>
+							</div><!-- fim dadosJuridica-->
+
+							<div class="dadosResponsavel">
+								<strong class="titulo-sessao">Dados do Responsável</strong>
+
+								<div class="wrap">
+									<div class="duplo nome">
+										<input type="text" name="firstName" placeholder="Primeiro nome*" class="input"/>
+									</div>
+
+									<div class="duplo sobrenome">
+										<input type="text" name="lastName" placeholder="Último nome*" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo birthDate">
+										<input type="text" name="birthDate" placeholder="Data de nascimento*" class="input"/>
+									</div>
+
+									<!-- <div class="duplo rg">
+										<input type="text" name="rg" placeholder="RG*" class="input"/>
+									</div> -->
+
+									<div class="duplo document">
+										<input type="text" name="document" placeholder="CPF*" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo phone">
+										<input type="text" name="phone" placeholder="Celular(celular/whatsapp)*" class="input"/>
+									</div>
+
+									<div class="duplo homePhone">
+										<input type="text" name="homePhone" placeholder="Telefone" class="input"/>
+									</div>
+								</div>
+							</div><!-- fim dadosResponsavel-->
+
+							<div class="dadosEndereco">
+								<strong class="titulo-sessao">Endereço</strong>
+
+								<div class="wrap">
+									<div class="duplo cep">
+										<input type="text" placeholder="CEP*" name="postalCode" class="input"/>
+									</div>
+
+									<div class="duplo numero">
+										<input type="text" placeholder="Número*" name="number" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo endereco">
+										<input type="text" placeholder="Endereço*" name="street" class="input"/>
+									</div>
+
+									<div class="duplo complemento">
+										<input type="text" placeholder="Complemento e Referência" name="complement" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo bairro">
+										<input type="text" placeholder="Bairro*" name="neighborhood" class="input"/>
+									</div>
+
+									<div class="duplo cidade">
+										<input type="text" placeholder="Cidade*" name="city" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo UF">
+										<input type="text" placeholder="Estado*" name="state" maxlength="2" class="input"/>
+									</div>
+
+									<div class="duplo receiverName">
+										<input type="text" placeholder="Quem será autorizado a efetuar compras em nome da empresa?" name="receiverName" class="input"/>
+									</div>
+								</div>
+							</div><!-- fim dadosEndereco -->
+
+							<div class="dadosPerguntas">
+								<div class="wrap">
+									<div class="unico">
+										<div class="mensagem">Aguarde...</div>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="unico">
+										<button class="bt enviar">Enviar Cadastro</button>
+									</div>
+								</div>
+							</div><!-- fim dadosPerguntas -->
+
+							<!--div class="dadosPerguntas">
+								<strong class="titulo-sessao">Informações</strong>
+
+								<div class="wrap">
+									<div class="duplo quaisLojas">
+										<input type="text" placeholder="De quais lojas costuma comprar para revender?" name="quaisLojas" class="input"/>
+									</div>
+
+									<div class="duplo paraQuem">
+										<input type="text" placeholder="Para quem costuma revender?" name="paraQuem" class="input"/>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="duplo linhaProduto">
+										<label>Qual linha de produto procura?</label>
+										
+										<button class="check" label="Feminino">
+											<span></span>
+											<label>Feminino</label>
+										</button>
+
+										<button class="check" label="Masculino">
+											<span></span>
+											<label>Masculino</label>
+										</button>
+
+										<button class="check" label="Fitness">
+											<span></span>
+											<label>Fitness</label>
+										</button>
+
+										<button class="check" label="Moda Praia">
+											<span></span>
+											<label>Moda Praia</label>
+										</button>
+
+										<button class="check" label="Infantil">
+											<span></span>
+											<label>Infantil</label>
+										</button>
+									</div>
+
+									<div class="duplo news">
+										<label>Newsletter</label>
+										<button class="check ativo" label="News">
+											<span></span>
+											<label>Deseja receber novidades e promoções por e-mail?</label>
+										</button>
+									</div>
+								</div>
+									
+								<div class="wrap">
+									<div class="unico">
+										<div class="mensagem">Aguarde...</div>
+									</div>
+								</div>
+
+								<div class="wrap">
+									<div class="unico">
+										<button class="bt enviar">Enviar Cadastro</button>
+									</div>
+								</div>
+							</div fim dadosPerguntas -->
+						</div>
+					</form><!-- fim form pessoa juridica -->
+					
+				</div><!-- fim tpl-content -->
+			</main>
+			
+			<!-- FOOTER -->
+			<vtex:template id="0-rdy-web-footer" />
+			
+		</div><!-- fim tpl-wrapper -->
+
+		<div id="modal" style="display: none;">
+			<div class="overlay"></div>
+
+			<div class="content">
+				<button class="close"></button>
+
+				<h2>Título do modal</h2>
+
+				<p>Lorem Ipsum is simply dummy text of the <br/>printing and typesetting industry</p>
+
+				<button class="bt ok">Ok</button>
+			</div>
+		</div>
+
+		<!-- SCRIPTS -->
+		<script src="/arquivos/jquery.mask.js?V=3"></script>
+		<vtex:template id="0-rdy-web-scripts" />
+	</body>
+
+</html>

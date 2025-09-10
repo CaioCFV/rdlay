@@ -1,0 +1,92 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+
+<div class="shelf-wrapper">
+
+	<div class="idSku" style="display: none;">$product.productVariantId</div>
+	<div class="productId" style="display: none;">$product.Id</div>
+	<div class="categoryName" style="display: none;">$product.CategoryName</div>
+	<div class="bestPrice" style="display: none;">$product.BestPrice</div>
+
+    <!-- Flags -->
+	<div rel="$product.productVariantId" class="flags">
+		<a title="$escapedName" href="$uri">
+			$product.DiscountHightLight
+			$product.HightLight
+			<div class="descontoDePor"><span>0%</span><strong>Off</strong></div>
+		</a>
+	</div>
+
+	<!-- Foto do produto -->
+	<div class="photo">
+	
+		<a title="$escapedName" href="$uri">
+			<div class="shelf-image-container">
+				<div class="photo photo1">
+					$product.GetImageTag(498,747)
+				</div>
+				<div class="photo photo2">
+					$product.GetImageTag(498,747,"Costa")
+				</div>
+			</div>
+		</a>
+		
+		#if ($product.IsInStock)
+			<div class="wrapperAmountInCart">
+				<ol class="skus">
+					<div class="cor"></div>
+					<div class="tamanho"></div>
+					
+					<strong class="carregando">Carregando...</strong>
+				</ol>
+        <button class="bt bt-adicionar bt2025">ADICIONAR A SACOLA</button>
+			</div>
+		#end
+	</div>
+
+	<div class="wrapperConteudo">
+		<a title="$escapedName" href="$uri">
+			<ul class="cores"></ul>
+		</a>
+		
+		<a title="$escapedName" href="$uri">
+			<div class="product-name">$product.Name</div>
+		</a>
+
+	    #if ($product.IsInStock)
+	    	<div class="boxWrapPreceComprar">
+		    	<a class="wrapperPreco" title="$escapedName" href="$uri">
+			        <p class="preco">
+				    	#if ($product.HasBestPrice)
+				        	<span class="valor-de"><strong>$product.ListPrice</strong></span>
+				        	<span class="valor-por vermelho"><strong>$product.BestPrice</strong></span>
+			        	#else
+			        		<span class="valor-por"><strong>$product.BestPrice</strong></span>
+				        #end
+
+					    <span class="valor-dividido">
+						    #if ($product.NumbersOfInstallment > 1)
+                  <strong>${product.NumbersOfInstallment}x $product.InstallmentValue</strong>
+						    #else
+						    	<strong>1x $product.InstallmentValue</strong>
+						    #end
+					    </span>
+				    </p>
+			    </a>
+			</div>
+	    #else
+	    	<div class="boxWrapPreceComprar">
+		    	<a title="$escapedName" href="$uri">
+					<!-- Produto esgotado -->
+			        <div class="esgotado">Produto Indisponível</div> 
+			    </a>
+			</div>
+	    #end
+    </div>
+</div>
+
+<div class="InsertSku" style="display: none">
+    $product.InsertSku
+</div>

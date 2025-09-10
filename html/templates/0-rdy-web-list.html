@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+  lang="pt-br"
+>
+  <head>
+    <vtex:metaTags />
+    <meta name="controller" content="Home" />
+
+    <!-- START - Subtemplate Metatags -->
+    <vtex:template id="0-rdy-web-metatags" />
+    <!-- END - Subtemplate Metatags -->
+
+    <!-- START - Style e Subtemplate Styles -->
+    <vtex:template id="0-rdy-web-styles" />
+    <!-- END - Subtemplate Styles -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="tpl-wrapper">
+        <!-- START: Header -->
+        <vtex:template id="0-rdy-web-header" />
+        <!-- END: Header -->
+
+        <!-- START: Main -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <div class="breadCrumb">
+                    <div class="tpl-center">
+                        <vtex.cmc:breadCrumb />
+                    </div>
+                </div>
+
+                <div class="topoTitulo desktop">
+                    <vtex:contentPlaceHolder id="Banner Departamento" />
+                </div>
+
+                <div class="topoTitulo mobile">
+                    <vtex:contentPlaceHolder id="Banner Departamento Mobile" />
+                </div>
+
+                <div class="wrapperFiltros">
+                    <div class="tpl-center">
+                        <div class="left">
+                            <img src="/arquivos/0-rdy-icone-filtros-32px-cinza.png"/>
+                            <label>Filtros</label>
+                        </div>
+
+                        <div class="middle">
+                            <div class="overflow">
+                                <button></button>
+                            </div>
+
+                            <div class="wrapperMobile">
+                                <div class="top">
+                                    <img src="/arquivos/0-rdy-icone-filtros-32px-cinza.png"/>
+                                    <label>Filtros</label>
+                                    <button class="close"></button>
+                                </div>
+
+                                <vtex.cmc:searchNavigator/>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <fieldset class="refino ordenar">
+                                <button class="filtrar">
+                                    <h5>
+                                        <label>Ordenar por</label>
+                                    </h5>
+                                </button>
+
+                                <select class="ordenar">
+                                    <option value="" selected="selected">Ordenar por</option>
+                                    <option value="OrderByPriceASC">Menor Preço</option>
+                                    <option value="OrderByPriceDESC">Maior Preço</option>
+                                    <option value="OrderByTopSaleDESC">Mais vendidos</option>
+                                    <option value="OrderByReviewRateDESC">Melhores avaliações</option>
+                                    <option value="OrderByNameASC">A - Z</option>
+                                    <option value="OrderByNameDESC">Z - A</option>
+                                    <option value="OrderByReleaseDateDESC">Data de lançamento</option>
+                                    <option value="OrderByBestDiscountDESC">Melhor Desconto</option>
+                                </select> 
+                            </fieldset>
+
+                            <button class="limparFiltros">Limpar Filtro</button>
+
+                            <div class="exibe">
+                                <ul class="organizaPrateleira">
+                                    <li class="quadruplo ativo" title="Exibir 4 produtos por linha">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </li>
+                                    <li class="quintuplo" title="Exibir 5 produtos por linha">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapperRight">
+                    <div class="tpl-center">
+                        <vtex.cmc:searchResult layout="a513f246-d4b6-4a38-93ad-2962c3a1eb6b" itemCount="28" columnCount="1" />
+                    </div>
+                </div><!-- FIM wrapperRight -->
+
+                <section class="seo">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="SEO" />
+                    </div>
+                </section><!-- FIM Seo -->
+
+            </div><!-- FIM tpl-content -->
+
+        </main><!-- FIM main -->
+
+        <!-- START: Footer -->
+        <vtex:template id="0-rdy-web-footer" />
+        <!-- END: Footer -->
+    </div><!-- FIM tpl-wrapper -->
+
+    <!-- START - Scripts e Subtemplate Scripts -->
+    <script type="text/javascript" src="/arquivos/vtexSmartResearch.min.js"></script>
+    <vtex:template id="0-rdy-web-scripts" />
+    <!-- END - Subtemplate Scripts -->
+  </body>
+</html>

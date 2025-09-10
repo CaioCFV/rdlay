@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+  lang="pt-br"
+>
+  <head>
+    <vtex:metaTags />
+    <meta name="controller" content="Home" />
+
+    <!-- START - Subtemplate Metatags -->
+    <vtex:template id="0-rdy-web-metatags" />
+    <!-- END - Subtemplate Metatags -->
+
+    <!-- START - Style e Subtemplate Styles -->
+    <vtex:template id="0-rdy-web-styles" />
+    <!-- END - Subtemplate Styles -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="tpl-wrapper">
+        <!-- START: Header -->
+        <vtex:template id="0-rdy-web-header" />
+        <!-- END: Header -->
+
+        <!-- START: Main -->
+        <main id="main">
+
+            <div class="tpl-content">
+
+                <section id="bloco-a">
+                    <div id="slideHome">
+                        <div class="slide desktop">
+                            <vtex:contentPlaceHolder id="slideHome" />
+                        </div>
+
+                        <div class="slide mobile">
+                            <vtex:contentPlaceHolder id="slideHomeMOBILE" />
+                        </div>
+                    </div><!-- FIM slideHome -->
+                </section><!-- FIM bloco-a -->
+
+                <section id="regua">
+                    <vtex.cmc:sectionRegua />
+                </section><!-- FIM regua -->
+
+                <section class="banners quadruplo">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="Banners Quadruplo" />
+                    </div>
+                </section><!-- FIM Banners -->
+
+                <section class="wrapperPrateleira triplo">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="prateleira01" />
+                    </div>
+                </section><!-- FIM wrapperPrateleira -->
+
+                <section class="banners duplo">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="Banners Duplo" />
+                    </div>
+                </section><!-- FIM Banners -->
+
+                <section class="prateleiraEspecial">
+                    <div class="tpl-center">
+                        <section class="wrapperPrateleira vertical">
+                            <vtex:contentPlaceHolder id="prateleira02" />
+                        </section><!-- FIM wrapperPrateleira -->
+
+                        <section class="wrapperPrateleira duplo">
+                            <vtex:contentPlaceHolder id="prateleira03" />
+                        </section><!-- FIM wrapperPrateleira -->
+                    </div>
+                </section><!-- FIM prateleiraEspecial -->
+
+                <section class="banners unico">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="Banners Unico" />
+                    </div>
+                </section><!-- FIM Banners -->
+
+                <section class="banners unico mobile">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="Banners Unico Mobile" />
+                    </div>
+                </section><!-- FIM Banners -->
+
+                <vtex:template id="0-rdy-web-cadastroNews" />
+
+                <section class="instagram">
+                    <div class="tpl-center">
+                        <h2 class="titulo">Instagram <strong>@rdlaymoda</strong></h2>
+
+                       <!-- LightWidget WIDGET -->
+                       <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/31c265726df551968318b9f841a24eb8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                    </div>
+                </section><!-- fim instagram -->
+
+                <section class="seo">
+                    <div class="tpl-center">
+                        <vtex:contentPlaceHolder id="SEO" />
+                    </div>
+                </section><!-- FIM Seo -->
+
+            </div><!-- FIM tpl-content -->
+
+        </main><!-- FIM main -->
+
+        <!-- START: Footer -->
+        <vtex:template id="0-rdy-web-footer" />
+        <!-- END: Footer -->
+    </div><!-- FIM tpl-wrapper -->
+
+    <!-- START - Scripts e Subtemplate Scripts -->
+    <vtex:template id="0-rdy-web-scripts" />
+    <!-- END - Subtemplate Scripts -->
+  </body>
+</html>

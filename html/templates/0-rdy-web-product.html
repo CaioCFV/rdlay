@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+    <head>
+        <vtex:metaTags />
+        <meta name="controller" content="Product" />
+
+        <!-- START: Metatags -->
+        <vtex:template id="0-rdy-web-metatags" />
+        <!-- END: Metatags -->
+
+        <!-- START: Styles -->
+        <vtex:template id="0-rdy-web-styles" />
+        <!-- END: Styles -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="tpl-wrapper">
+            <!-- START: Header -->
+            <vtex:template id="0-rdy-web-header" />
+            <!-- END: Header -->
+
+            <!-- MAIN -->
+            <main id="main">
+
+                <div class="tpl-content">
+                
+                    <div class="breadCrumb">
+                        <div class="tpl-center">
+                            <vtex.cmc:breadCrumb />
+                        </div>
+                    </div>
+                    
+                    <section id="area-a">
+                        <div class="tpl-center">
+                            <div class="left">
+                                <vtex.cmc:ProductImage/>
+                            </div><!-- fim left -->
+
+                            <div class="right"> 
+                                <div class="wrapper categoria"></div>
+
+                                <div class="wrapper nome"><h1><vtex.cmc:productName/></h1></div>
+                                
+                                <div class="wrapper cod">Ref: <vtex.cmc:skuReference/></div>
+
+                                <div class="wrapper preco"><vtex.cmc:skuPrice /></div>
+                                
+                                <div class="wrapper flags" style="display: none;"><vtex.cmc:HightLight/><vtex.cmc:discountHightLight/></div>
+
+                                <div class="wrapper sku"><vtex.cmc:stockKeepingUnitSelection /></div>
+
+                                <div id="gridBuy" class="wrapper skus grade">
+                                    <div class="skus skuRichSelection"><vtex.cmc:skuRichSelection changeImage="1" /></div>
+
+                                    <div class="headGridList"></div>
+                                    <div class="allLines"></div>
+                                    <div class="buyProduct">
+                                        <div class="uniteValue"><strong>Quant. de produtos:</strong> <span></span></div>
+                                        <div class="priceUnite"><strong>Valor da quant.:</strong> <span></span></div>
+
+                                        <div class="bts">
+                                            <button class="bt addToBag">Adicionar na sacola</button>
+                                            
+                                            <!--button class="bt buyNow">Comprar</button-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper tabelaMedidas">
+                                    <img src="/arquivos/icon-rdlay-tabelamedidas.png"/>
+                                    <span>Tabela de Medidas</span>
+                                </div>
+                                
+                                <div class="wrapper botao">
+                                    <vtex.cmc:BuyButton />
+                                </div>
+
+                                <div class="wrapper extras">
+                                    <div class="pix">
+                                        <img src="/arquivos/0-rdy-icone-pix-32px-cinza.png"/>
+                                        <label></label>
+                                    </div>
+                                    <div class="cupom varejo"><vtex.cmc:CupomPrimeiraCompra /></div>
+                                    <div class="cupom atacado"><vtex.cmc:CupomPrimeiraCompraATACADO /></div>
+                                </div>
+
+                                <div class="wrapper descricao">
+                                    <vtex.cmc:ProductDescription/>
+                                    <vtex.cmc:productSpecification/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>  
+                    
+                    <section id="compreJunto">
+                        <div class="tpl-center">
+                            <vtex.cmc:BuyTogether/>
+                        </div>
+                    </section><!-- FM compreJunto -->
+
+                    <section id="descricaoespecial">
+                      <div class="tpl-center">
+                          <ul class="abas">
+                            <li class="ativo descricao" rel="Descrição">Descrição</li>
+                            <li class="caracteristicas" rel="Características">Características</li>
+                          </ul>
+
+                          <div class="ativo conteudo descricao" rel="Descrição">
+                            <vtex:contentPlaceHolder id="descricaoespecial" />
+                          </div>
+
+                          <div class="conteudo caracteristicas" rel="Características">
+                            <vtex:contentPlaceHolder id="caracteristicasespeciais" />
+                          </div>
+                      </div>
+                  </section><!-- FIM descricaoespecial -->
+
+                    <section id="area-e" class="wrapperPrateleira quadruplo">
+                        <div class="tpl-center">
+                            <vtex:contentPlaceHolder id="qvvtb" />
+                        </div>
+                    </section><!-- FIM wrapperPrateleira -->
+
+                </div><!-- fim tpl-content -->
+
+            </main><!-- fim main -->
+
+            <!-- START: Footer -->
+            <vtex:template id="0-rdy-web-footer" />
+            <!-- END: Footer -->
+        </div>
+
+        <div id="newsTabelaMedidas">
+            <div class="overlay"></div>
+        
+            <div class="content">
+                <button class="close"></button>
+                
+                <div class="imagem"></div>
+            </div>
+        </div><!-- FIM newsTabelaMedidas -->
+
+        <!-- START: Scripts -->
+        <vtex:template id="0-rdy-web-scripts" />
+        <!-- END: Scripts -->
+    </body>
+</html>

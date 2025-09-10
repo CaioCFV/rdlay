@@ -1,0 +1,21 @@
+/* Grid config */
+$grid-columns: 24;
+$grid-gutter-width: 20px;
+$container-large-desktop: (1180px + $grid-gutter-width);
+
+/* Typography */
+$primaryFont: '';
+$secondaryFont: '';
+
+$fontRegular: 400;
+$fontMedium: 500;
+$fontSemiBold: 600;
+$fontBold: 700;
+$fontExtraBold: 800;
+
+$black: #000000;
+$white: #ffffff;
+
+/* Styles */
+$primeiraCor: #f5f7fb; 
+$segundaCor: #363435;

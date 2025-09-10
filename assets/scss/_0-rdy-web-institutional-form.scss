@@ -1,0 +1,296 @@
+/* 
+=============================================
+--------------- institucional ---------------
+=============================================
+*/
+body{
+	&.institucional.fale-conosco{	
+		main{
+			.tpl-content{
+				section.conteudo .tpl-center{
+					width: calc(100% - 240px);
+				}
+
+				.wrapperContent{
+					display: flex;
+					justify-content: space-between;
+					width: calc(100% - 260px)!important;
+
+					form{
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						max-width: 580px;
+
+						input{
+							&[type="text"]{
+		                        border: 1px solid $segundaCor;
+		                        height: 58px;
+		                        color: $segundaCor;
+		                        font-size: 14px;
+		                        font-weight: 400;
+		                        padding-top: 0;
+		                        padding-bottom: 0;
+		                        padding-left: 20px;
+		                        border-radius: 5px;
+		                        font-family: inherit;
+		                        background-color: $primeiraCor;
+
+		                        ::-webkit-input-placeholder,
+		                        ::-moz-placeholder,
+		                        :-ms-input-placeholder,
+		                        :-moz-placeholder {
+		                            text-transform: uppercase;
+		                            font-size: 14px;
+		                            color: $segundaCor;
+		                            font-family: inherit;
+		                            font-weight: 400;
+		                        }
+
+		                        &#nome,
+		                        &#email,
+		                        &#cpf,
+		                        &#telefone{
+		                        	width: calc(50% - 32px);
+		                        }
+
+		                        &:focus{
+		                        	outline: none;
+		                        }
+
+		                        &.error{
+		                        	border-color: red;
+		                        }
+	                        }
+						}
+
+						button#enviar-contato{
+							width: 150px;
+	                        height: 60px;
+	                        cursor: pointer;
+	                        border: 0;
+	                        color: #fff;
+	                        text-transform: uppercase;
+	                        font-size: 12px;
+	                        font-weight: 500;
+	                        background-color: #00C588;
+	                        font-family: inherit;
+	                        border-radius: 5px;
+	                        background-image: url('/arquivos/0-rdy-icone-email-16px-branco.png');
+	                        background-repeat: no-repeat;
+	                        background-position: 30px;
+	                        padding-left: 30px;
+
+	                        -webkit-transition: all 0.5s ease;
+	                        -moz-transition: all 0.5s ease;
+	                        -o-transition: all 0.5s ease;
+	                        transition: all 0.5s ease;
+
+	                        &:focus{
+	                            outline: none;
+	                        }
+
+	                        &:hover{
+	                            background-color: $segundaCor;
+	                            border: 0;
+	                        }
+						}
+
+						.wrapAssunto{
+							width: 100%;
+							height: 58px;
+							position: relative;
+
+							button.selectFake{
+								width: 100%;
+		                        height: 58px;
+								border: 1px solid $segundaCor;
+								background-color: $primeiraCor;
+								border-radius: 5px;
+								display: flex;
+								cursor: pointer;
+								justify-content: space-between;
+								padding-left: 20px;
+								padding-right: 20px;
+
+								&:before{
+									display: none;
+								}
+
+								&.error{
+		                        	border-color: red;
+		                        }
+								
+								span{
+									font-family: inherit;
+									color: $segundaCor;
+			                        font-size: 14px;
+			                        display: block;
+			                        font-weight: 400;
+			                        text-transform: none;
+								}
+
+								&:after{
+									content: '';
+								    display: block;
+								    padding: .3rem;
+								    -webkit-box-shadow: 1.5px -1.5px $segundaCor inset;
+								    border: solid transparent;
+								    transform: rotate(-45deg);
+								    margin-left: 5px;
+								    margin-top: -6px;
+								}
+							}
+
+
+							select{
+								width: 100%;
+								height: 58px;
+								position: absolute;
+								top: 0;
+								left: 0;
+								cursor: pointer;
+								opacity: 0;
+							}
+						}
+
+						textarea{
+							width: 100%;
+							height: 200px;
+
+							border: 1px solid $segundaCor;
+	                        color: $segundaCor;
+	                        font-size: 14px;
+	                        font-weight: 400;
+	                        padding: 20px;
+	                        border-radius: 5px;
+	                        font-family: inherit;
+	                        background-color: $primeiraCor;
+
+	                        ::-webkit-input-placeholder,
+	                        ::-moz-placeholder,
+	                        :-ms-input-placeholder,
+	                        :-moz-placeholder {
+	                            font-size: 14px;
+	                            color: $segundaCor;
+	                            font-family: inherit;
+	                            font-weight: 400;
+	                        }
+
+	                        &:focus{
+	                        	outline: none;
+	                        }
+
+	                        &.error{
+	                        	border-color: red;
+	                        }
+						}
+					}
+
+					.fc__contato{
+						padding-top: 65px;
+
+						h3.contato__title{
+							display: flex;
+							align-items: center;
+							color: $segundaCor;
+							font-size: 14px;
+							font-weight: 600;
+							font-family: inherit;
+							text-transform: uppercase;
+
+							&:before{
+								content: '';
+								background-size: 20px;
+								background-repeat: no-repeat;
+								width: 20px;
+								height: 20px;
+								display: block;
+								margin-right: 10px;
+							}
+
+							&.horario{
+								&:before{
+									background-image: url('/arquivos/0-rdy-icone-relogio-faleconosco-cinza.png?v=2');
+								}
+							}
+
+							&.email{
+								&:before{
+									background-image: url('/arquivos/0-rdy-icone-email-faleconosco-cinza.png?v=2');
+								}
+							}
+
+							&.telefone{
+								&:before{
+									background-image: url('/arquivos/0-rdy-icone-wpp-faleconosco-cinza.png?v=2');
+								}
+							}
+						}
+
+						ul{
+							margin-top: 10px;
+							margin-bottom: 20px;
+
+							li{
+								font-size: 13px;
+								font-weight: 300;
+								line-height: 20px;
+								font-family: inherit;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	body{
+		&.institucional.fale-conosco{	
+			main{
+				.tpl-content{
+					section.conteudo{
+						.tpl-center{
+							width: calc(100% - 20px);
+						}
+					}
+
+					.wrapperContent{
+						flex-direction: column!important;
+						width: 100%!important;
+						max-width: 100%!important;
+
+						form,
+						.fc__contato{
+							width: 100%!important;
+							max-width: 100%!important;
+						}
+
+						form{
+							flex-direction: column;
+
+							input{
+								&[type="text"]{
+									width: calc(100% - 26px)!important;
+									margin-bottom: 10px;
+								}
+							}
+
+							.wrapAssunto{
+								margin-bottom: 10px;
+							}
+
+							textarea{
+								margin-bottom: 10px;
+								width: calc(100% - 40px);
+								height: 120px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

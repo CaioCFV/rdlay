@@ -1,0 +1,154 @@
+/* Footer */
+footer#footer{
+	width: 100%;
+	border-top: 2px solid #f5f7fb;
+	margin-top: 70px;
+
+	.top{
+		padding-top: 70px;
+		padding-bottom: 70px;
+
+		.tpl-center{
+			display: flex;
+			justify-content: space-between;
+
+			.coluna{
+				&.coluna04,
+				&.coluna05{
+					ul{
+						display: flex;
+						align-items: center;
+
+						li{
+							margin-right: 10px;
+
+							&:last-child{
+								margin-right: 0;
+							}
+						}
+					}
+				}
+
+				h3{
+					color: $segundaCor;
+					font-size: 18px;
+					margin-bottom: 20px;
+				}
+
+				ul{
+					li{
+						line-height: 36px;
+
+						a{
+							display: block;
+							color: $segundaCor;
+							font-weight: 500;
+
+							&:hover{
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	.middle{
+		border-top: 2px solid #f5f7fb;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		.tpl-center{
+			display: flex;
+			justify-content: space-between;
+
+			.left{
+				p{
+					font-family: inherit;
+					font-size: 14px;
+					font-weight: 100;
+					line-height: 160%;
+				}
+			}
+
+			.right{
+				display: flex;
+				align-items: center;
+
+				a{
+					display: block;
+					margin-right: 20px;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					img{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.bottom{
+		background-color: $segundaCor;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		.tpl-center{
+			small{
+				width: 100%;
+				display: block;
+				font-family: inherit;
+				font-size: 13px;
+				font-weight: 400;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	footer#footer{
+		.top{
+			padding-top: 40px;
+			padding-bottom: 0;
+
+			.tpl-center{
+				flex-direction: column;
+
+				.coluna{
+					margin-bottom: 40px;
+				}
+			}
+		}
+
+		.middle{
+			.tpl-center{
+				flex-direction: column;
+
+				.left{
+					p{
+						font-size: 12px;
+					}
+				}
+
+				.right{
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.bottom{
+			.tpl-center{
+				small{
+					font-size: 12px;
+					line-height: 140%;
+				}
+			}
+		}
+	}
+}

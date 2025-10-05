@@ -1,47 +1,48 @@
-const path = require('path')
-const glob = require("glob")
+const path = require("path");
+const glob = require("glob");
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const { PATHS } = require('./utils/constants')
-const commonRules = require('./common/rules')
-const commonPlugins = require('./common/plugins')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const { PATHS } = require("./utils/constants");
+const commonRules = require("./common/rules");
+const commonPlugins = require("./common/plugins");
 
-const config = env => {
-	return {
-		entry: {
-			'application.js': glob.sync(`${PATHS.scripts}/*/*.js`),
-		},
-		output: {
-			filename: `0-${env.STORE_ACRO}-web-[name]`,
-			path: path.resolve(__dirname, PATHS.build),
-		},
-		module: {
-			rules: [
-				...commonRules,
-			]
-		},
-		plugins: [
-			...commonPlugins,
-			new MiniCssExtractPlugin({
-				filename: `0-${env.STORE_ACRO}-web-styles.css`,
-			}),
-			new BrowserSyncPlugin({
-				open: true,
-				https: true,
-				ui: false,
-				host: `${env.STORE_NAME}.vtexlocal.com.br`,
-				startpath: '/admin/login/',
-				proxy: `https://${env.STORE_NAME}.vtexcommercestable.com.br`,
-				serveStatic: [
-					{
-						route: '/arquivos',
-						dir: `${PATHS.build}/`,
-					},
-				],
-			})
-		]
-	}
-}
+const config = (env) => {
+  return {
+    entry: {
+      "application.js": glob.sync(`${PATHS.scripts}/*/*.js`),
+      "0-rdy-atacado-cadastro.js": glob.sync(
+        `${PATHS.scripts}/0-rdy-atacado-cadastro.js`
+      ),
+    },
+    output: {
+      filename: `0-${env.STORE_ACRO}-web-[name]`,
+      path: path.resolve(__dirname, PATHS.build),
+    },
+    module: {
+      rules: [...commonRules],
+    },
+    plugins: [
+      ...commonPlugins,
+      new MiniCssExtractPlugin({
+        filename: `0-${env.STORE_ACRO}-web-styles.css`,
+      }),
+      new BrowserSyncPlugin({
+        open: true,
+        https: true,
+        ui: false,
+        host: `${env.STORE_NAME}.vtexlocal.com.br`,
+        startpath: "/admin/login/",
+        proxy: `https://${env.STORE_NAME}.vtexcommercestable.com.br`,
+        serveStatic: [
+          {
+            route: "/arquivos",
+            dir: `${PATHS.build}/`,
+          },
+        ],
+      }),
+    ],
+  };
+};
 
-module.exports = config
+module.exports = config;

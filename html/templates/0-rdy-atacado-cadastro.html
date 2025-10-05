@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+  lang="pt-br"
+>
+  <head>
+    <vtex:metaTags />
+    <meta name="controller" content="Home" />
+
+    <vtex:template id="0-rdy-web-metatags" />
+    <vtex:template id="0-rdy-web-styles" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://rdlayb2b.vtexassets.com/arquivos/0-rdy-atacado-cadastro.css"
+    />
+  </head>
+
+  <body>
+    <vtex:template id="0-rdy-web-header" />
+
+    <main id="main" class="cadastrob2b">
+      <section class="cadastrob2b__sec1">
+        <template class="js--banner">
+          <div class="desktop">
+            <vtex:contentPlaceHolder id="BANNER 1 - DESKTOP" />
+          </div>
+          <div class="mobile">
+            <vtex:contentPlaceHolder id="BANNER 1 - MOBILE" />
+          </div>
+        </template>
+      </section>
+
+      <div class="cadastrob2b__sec2">
+        <div class="cadastrob2b__sec2__left">
+          <template class="js--banner">
+            <div class="desktop">
+              <vtex:contentPlaceHolder id="BANNER 2 - DESKTOP" />
+            </div>
+            <div class="mobile">
+              <vtex:contentPlaceHolder id="BANNER 2 - MOBILE" />
+            </div>
+          </template>
+        </div>
+
+        <form class="cadastrob2b__sec3__right">
+          <h1 class="cadastrob2b__sec3__right__title">Seja Representante</h1>
+          <p class="cadastrob2b__sec3__right__subtitile">
+            Comece seu cadastro, é rápido e grátis!
+          </p>
+          <fieldset class="cadastrob2b__sec3__right__fieldset">
+            <input type="text" placeholder="Nome Completo" name="name" />
+          </fieldset>
+          <fieldset class="cadastrob2b__sec3__right__fieldset">
+            <input type="text" placeholder="CPF" name="cpf" />
+          </fieldset>
+          <fieldset class="cadastrob2b__sec3__right__fieldset">
+            <input type="date" placeholder="Data de nascimento" name="date" />
+          </fieldset>
+          <fieldset class="cadastrob2b__sec3__right__fieldset">
+            <input type="email" placeholder="E-mail" name="email" />
+          </fieldset>
+          <fieldset class="cadastrob2b__sec3__right__fieldset">
+            <input type="text" placeholder="Whatsapp" name="whatsapp" />
+          </fieldset>
+        </form>
+      </div>
+
+      <section class="cadastrob2b__sec3">
+        <template class="js--banner">
+          <div class="desktop">
+            <vtex:contentPlaceHolder id="BANNER 3 - DESKTOP" />
+          </div>
+          <div class="mobile">
+            <vtex:contentPlaceHolder id="BANNER 3 - MOBILE" />
+          </div>
+        </template>
+      </section>
+    </main>
+
+    <vtex:template id="0-rdy-web-footer" />
+    <vtex:template id="0-rdy-web-scripts" />
+    <script
+      type="text/javascript"
+      src="/arquivos/0-rdy-atacado-cadastro.js"
+    ></script>
+  </body>
+</html>

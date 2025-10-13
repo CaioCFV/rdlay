@@ -2,14 +2,14 @@
     z-index: 9999999 !important;
 }
 
-#vtexIdContainer{
-    position: fixed!important;
-    z-index: 9999999!important;
+#vtexIdContainer {
+    position: fixed !important;
+    z-index: 9999999 !important;
 
-    .vtexIdUI{
+    .vtexIdUI {
         box-shadow: inherit;
         border-radius: inherit;
-        border: 2px solid #eee!important;
+        border: 2px solid #eee !important;
         width: 90%;
         max-width: 600px;
         top: 50%;
@@ -17,34 +17,34 @@
         transform: translate(-50%, -50%);
         margin: 0;
 
-        #vtexIdUI-facebook{
-            background-color: #4568ad!important;
+        #vtexIdUI-facebook {
+            background-color: #4568ad !important;
         }
 
-       input[type="text"],
-       input[type="password"],
-       input[type="email"]{
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
             border-radius: inherit;
             box-shadow: inherit;
             font-size: 14px;
         }
 
-        a{
+        a {
             font-size: 12px;
             color: $black;
         }
 
-        label{
+        label {
             font-size: 12px;
         }
 
-        .modal-header{
+        .modal-header {
             background-color: $white;
             text-align: center;
             border-bottom: inherit;
 
-            button{
-                &.close{
+            button {
+                &.close {
                     background-color: inherit;
                     color: $black;
                     box-shadow: inherit;
@@ -52,21 +52,21 @@
                     font-size: 32px;
                     cursor: pointer;
                     font-weight: 300;
-                    display: block!important;
+                    display: block !important;
                 }
             }
 
-            h4{
-                &.vtexIdUI-heading{
+            h4 {
+                &.vtexIdUI-heading {
                     text-align: center;
 
-                    span{
-                        &:first-child{
+                    span {
+                        &:first-child {
                             font-size: 13px;
                             letter-spacing: 0.5px;
                             font-family: inherit;
 
-                            &:before{
+                            &:before {
                                 content: 'Faça seu login';
                                 font-size: 18px;
                                 letter-spacing: -0.5px;
@@ -83,12 +83,12 @@
             }
         }
 
-        .modal-body{
+        .modal-body {
             padding: 20px 30px 20px;
 
-            ul{
-                li{
-                    button{
+            ul {
+                li {
+                    button {
                         border-radius: inherit;
                         background-image: inherit;
                         box-shadow: inherit;
@@ -96,9 +96,9 @@
                         text-transform: none;
                         font-family: inherit;
                         letter-spacing: 0px;
-                        text-shadow: none!important;
-                        color: #fff!important;
-                        border: 0!important;
+                        text-shadow: none !important;
+                        color: #fff !important;
+                        border: 0 !important;
 
                         -webkit-appearance: none;
                         -moz-appearance: none;
@@ -106,18 +106,18 @@
 
                         box-shadow: 0 0px 10px rgba(0, 0, 0, .0);
 
-                        -moz-transition: all 0.2s!important;
-                        -webkit-transition: all 0.2s!important;
-                        transition: all 0.2s!important;
+                        -moz-transition: all 0.2s !important;
+                        -webkit-transition: all 0.2s !important;
+                        transition: all 0.2s !important;
 
-                        &:hover{
+                        &:hover {
                             box-shadow: 0 0px 10px rgba(0, 0, 0, .4);
                         }
 
-                        &#loginWithAccessKeyBtn{
+                        &#loginWithAccessKeyBtn {
                             background-color: #6B6B6B !important;
 
-                            &:after{
+                            &:after {
                                 content: '';
                                 display: block;
                                 background: url("/arquivos/login-mail.png?v=4") no-repeat;
@@ -130,10 +130,10 @@
                             }
                         }
 
-                        &#vtexIdUI-google-plus{
+                        &#vtexIdUI-google-plus {
                             background-color: #E8453C !important;
 
-                            &:after{
+                            &:after {
                                 content: '';
                                 display: block;
                                 background: url("/arquivos/login-gplus.png?v=4") no-repeat;
@@ -146,10 +146,10 @@
                             }
                         }
 
-                        &#vtexIdUI-facebook{
+                        &#vtexIdUI-facebook {
                             background-color: #4B639A !important;
 
-                            &:after{
+                            &:after {
                                 content: '';
                                 display: block;
                                 background: url("/arquivos/login-facebookicon.png?v=4") no-repeat;
@@ -165,10 +165,10 @@
                             }
                         }
 
-                        &#loginWithUserAndPasswordBtn{
+                        &#loginWithUserAndPasswordBtn {
                             background-color: #000 !important;
 
-                            &:after{
+                            &:after {
                                 content: '';
                                 display: block;
                                 background: url("/arquivos/login-lock.png?v=4") no-repeat;
@@ -180,7 +180,7 @@
                             }
                         }
 
-                        i{
+                        i {
                             display: none;
                         }
                     }
@@ -188,13 +188,13 @@
             }
         }
 
-        .modal-footer{
+        .modal-footer {
             border: inherit;
             box-shadow: inherit;
             border-radius: inherit;
             background-color: inherit;
 
-            button{
+            button {
                 border-radius: inherit;
                 background-image: inherit;
                 box-shadow: inherit;
@@ -205,19 +205,20 @@
                 text-shadow: inherit;
                 border: inherit;
 
-                i{
+                i {
                     display: none;
                 }
             }
         }
     }
 }
+
 #scrollLoading {
     display: none !important;
 }
 
 #ajaxBusy {
-    display: none!important;
+    display: none !important;
 }
 
 .opacity {
@@ -280,95 +281,99 @@ body {
     font-weight: 300;
     font-style: normal;
 
-    a.whatsapp{
-      position: fixed;
-      bottom: 5px;
-      right: 10px;
-      z-index: 999;
-      display: flex;
+    a.whatsapp {
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        z-index: 999;
+        display: flex;
 
-      &.b2b{
-        display: none;
-      }
+        // &.b2b {
+        //     display: none;
+        // }
 
-      img{
-        width: 68px;
-        height: 68px;
-        display: block;
-      }
+        img {
+            width: 68px;
+            height: 68px;
+            display: block;
+        }
     }
 
-    li.varejo{
+    li.varejo {
         display: none;
     }
 
-    li.whatsapp{
-        &.varejo{
+    li.whatsapp {
+        &.varejo {
             display: flex;
         }
-        &.atacado{
+
+        &.atacado {
             display: none;
         }
     }
 
-    &.b2b{
-        a.whatsapp.b2c{
-          display: none;
-        }
-        a.whatsapp.b2b{
-          display: flex;
-        }
-
-        li.varejo{
-            display: flex;
-        }
-        li.atacado{
+    &.b2b {
+        a.whatsapp.b2c {
             display: none;
         }
 
-        li.whatsapp{
-            &.varejo{
-                display: none!important;
+        a.whatsapp.b2b {
+            display: flex;
+        }
+
+        li.varejo {
+            display: flex;
+        }
+
+        li.atacado {
+            display: none;
+        }
+
+        li.whatsapp {
+            &.varejo {
+                display: none !important;
             }
-            &.atacado{
-                display: flex!important;
+
+            &.atacado {
+                display: flex !important;
             }
         }
     }
 
     #qtyProduct,
-    #porcentagempix{
+    #porcentagempix {
         display: none;
     }
 
     &.hidden,
-    &.menuOpen{
+    &.menuOpen {
         overflow: hidden;
     }
 
-    .tpl-center{
+    .tpl-center {
         max-width: 1400px;
         width: calc(100% - 80px);
         margin: auto;
     }
 
-    strong#cupomheader{
+    strong#cupomheader {
         cursor: pointer;
     }
 
-    section{
-        &.wrapperPrateleira{
+    section {
+        &.wrapperPrateleira {
             margin-top: 70px;
 
-            .tpl-center{
+            .tpl-center {
                 width: calc(100% - 120px);
                 max-width: 1800px;
                 padding-left: 20px;
                 padding-right: 20px;
             }
 
-            .slick-slider{
-                .slick-arrow{
+            .slick-slider {
+                .slick-arrow {
                     position: absolute;
                     right: 5px;
                     top: -60px;
@@ -378,40 +383,40 @@ body {
                     font-size: 0;
                     cursor: pointer;
 
-                    &.slick-prev{
+                    &.slick-prev {
                         right: 45px;
                         background-image: url('/arquivos/0-rdy-icone-setaesquerda-30px-cinza.png');
                     }
 
-                    &.slick-next{
+                    &.slick-next {
                         background-image: url('/arquivos/0-rdy-icone-setadireita-30px-cinza.png');
                     }
                 }
             }
         }
 
-        &#regua{
+        &#regua {
             padding-top: 20px;
             padding-bottom: 20px;
 
-            .tpl-center{
+            .tpl-center {
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                & > div{
-                    &.item{
+                &>div {
+                    &.item {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
 
-                        &.atacado{
+                        &.atacado {
                             display: none;
                         }
                     }
 
-                    &.divisao{
+                    &.divisao {
                         width: 12px;
                         height: 12px;
                         background-color: $segundaCor;
@@ -421,12 +426,12 @@ body {
                         margin-right: 60px;
                     }
 
-                    img{
+                    img {
                         margin-right: 5px;
                         width: 20px;
                     }
 
-                    label{
+                    label {
                         font-family: inherit;
                         font-weight: 300;
                         font-size: 14px;
@@ -434,11 +439,11 @@ body {
                         margin-top: 5px;
                         line-height: 140%;
 
-                        strong{
+                        strong {
                             font-weight: 600;
                         }
 
-                        a{
+                        a {
                             color: $segundaCor;
                         }
                     }
@@ -446,20 +451,20 @@ body {
             }
         }
 
-        .tpl-center{
-            h2{
-                &.titulo{
+        .tpl-center {
+            h2 {
+                &.titulo {
                     font-size: 26px;
                     font-weight: 400;
                     font-family: inherit;
                     position: relative;
                     margin-bottom: 40px;
 
-                    strong{
+                    strong {
                         font-weight: 600;
                     }
 
-                    &:before{
+                    &:before {
                         content: '';
                         display: block;
                         height: 3px;
@@ -474,27 +479,27 @@ body {
         }
 
         &.instagram,
-        &.seo{
+        &.seo {
             margin-top: 80px;
 
-            .tpl-center{
+            .tpl-center {
                 width: calc(100% - 80px);
                 max-width: 1800px;
             }
         }
 
-        &.seo{
-            .tpl-center{
+        &.seo {
+            .tpl-center {
                 max-width: 920px;
 
-                h2.titulo{
+                h2.titulo {
                     text-align: center;
                     width: max-content;
                     margin: auto;
                     margin-bottom: 50px;
                 }
 
-                p{
+                p {
                     font-family: inherit;
                     font-size: 14px;
                     color: $segundaCor;
@@ -502,16 +507,16 @@ body {
                     text-align: center;
                     margin-bottom: 10px;
 
-                    &:last-child{
+                    &:last-child {
                         margin-bottom: 0;
                     }
 
-                    &.oculto{
+                    &.oculto {
                         display: none;
                     }
                 }
 
-                a.vermaisseo{
+                a.vermaisseo {
                     display: block;
                     width: 100%;
                     text-align: center;
@@ -520,33 +525,33 @@ body {
                     color: $segundaCor;
                     font-weight: 600;
 
-                    &:hover{
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
             }
         }
 
-        &.cadastroNews{
+        &.cadastroNews {
             margin-top: 80px;
             margin-bottom: 80px;
             overflow: hidden;
             clear: both;
             display: block;
 
-            .tpl-center{
+            .tpl-center {
                 display: flex;
                 max-width: 1810px;
                 width: calc(100% - 80px);
 
-                .left{
+                .left {
                     width: auto;
 
-                    &.b2b{
-                      display: none;
+                    &.b2b {
+                        display: none;
                     }
 
-                    h2{
+                    h2 {
                         font-family: inherit;
                         text-transform: uppercase;
                         font-size: 52px;
@@ -556,12 +561,12 @@ body {
                         color: $segundaCor;
                         letter-spacing: normal;
 
-                        strong{
+                        strong {
                             font-weight: 800;
                         }
                     }
 
-                    h3{
+                    h3 {
                         font-family: inherit;
                         text-transform: uppercase;
                         font-size: 32px;
@@ -572,7 +577,7 @@ body {
                         color: $segundaCor;
                     }
 
-                    p{
+                    p {
                         font-family: inherit;
                         font-size: 14px;
                         letter-spacing: normal;
@@ -584,7 +589,7 @@ body {
                 }
             }
 
-            form{
+            form {
                 width: 100%;
                 padding-left: 40px;
                 padding-right: 40px;
@@ -594,8 +599,8 @@ body {
                 position: relative;
                 flex-wrap: wrap;
 
-                input{
-                    &[type="text"]{
+                input {
+                    &[type="text"] {
                         border: 1px solid $segundaCor;
                         width: calc(50% - 120px);
                         height: 58px;
@@ -618,19 +623,18 @@ body {
                             font-family: inherit;
                         }
 
-                        &.nome{    
-                        }
-                        &.email{    
-                        }
+                        &.nome {}
 
-                        &.error{
-                            &:focus{
+                        &.email {}
+
+                        &.error {
+                            &:focus {
                                 border-color: red;
                             }
                         }
                     }
 
-                    &[type="submit"]{
+                    &[type="submit"] {
                         width: 150px;
                         height: 60px;
                         cursor: pointer;
@@ -652,25 +656,25 @@ body {
                         -o-transition: all 0.5s ease;
                         transition: all 0.5s ease;
 
-                        &:focus{
+                        &:focus {
                             outline: none;
                         }
 
-                        &:hover{
+                        &:hover {
                             background-color: $segundaCor;
                             border: 0;
                         }
                     }
 
-                    &:focus{
+                    &:focus {
                         outline: none;
                     }
                 }
 
-                div.label{
+                div.label {
                     width: 100%;
 
-                    label{
+                    label {
                         font-family: inherit;
                         color: $segundaCor;
                         font-size: 14px;
@@ -680,46 +684,46 @@ body {
             }
 
             @media screen and (max-width: 980px) {
-                .tpl-center{
+                .tpl-center {
                     flex-direction: column;
                     padding-left: 0;
                     padding-right: 0;
 
-                    .left{
+                    .left {
                         width: 100%;
                         text-align: center;
 
-                        h2{
+                        h2 {
                             width: 100%;
                             font-size: 34px;
                         }
 
-                        h3{
+                        h3 {
                             letter-spacing: 2px;
                             width: 100%;
                             font-size: 18px;
                         }
 
-                        p{
+                        p {
                             width: 100%;
                             line-height: 140%;
                         }
                     }
 
-                    form{
+                    form {
                         width: 100%;
                         margin-top: 20px;
                         flex-wrap: wrap;
                         padding: 0;
                         justify-content: space-between;
 
-                        input[type="text"]{
+                        input[type="text"] {
                             width: 100%;
                             margin-right: 0;
                             margin-bottom: 10px;
                         }
 
-                        div.label{
+                        div.label {
                             width: calc(100% - 160px);
                             text-align: right;
                             margin-top: 10px;
@@ -733,21 +737,21 @@ body {
     @media screen and (max-width: 980px) {
         padding-top: 115px;
 
-        &.home2025{
-          padding-top: 0!important;
+        &.home2025 {
+            padding-top: 0 !important;
         }
 
-        &.contador{
-          padding-top: 253px;
+        &.contador {
+            padding-top: 253px;
         }
 
-        section{
-            .tpl-center{
-                h2{
-                    &.titulo{
+        section {
+            .tpl-center {
+                h2 {
+                    &.titulo {
                         font-size: 18px;
 
-                        &:before{
+                        &:before {
                             height: 3px;
                             width: 70px;
                         }
@@ -756,43 +760,43 @@ body {
             }
         }
 
-        .tpl-center{
+        .tpl-center {
             width: calc(100% - 40px);
         }
 
-        section{
-            &#regua{
-                .tpl-center{
-                    & > div{
+        section {
+            &#regua {
+                .tpl-center {
+                    &>div {
                         display: block;
                     }
 
                     div.item1,
                     div.item2,
                     div.item3,
-                    div.item4{
+                    div.item4 {
                         align-items: center;
                         justify-content: center;
                     }
                 }
             }
 
-            &.wrapperPrateleira{
+            &.wrapperPrateleira {
                 margin-top: 30px;
 
-                .tpl-center{
+                .tpl-center {
                     width: calc(100% - 40px);
                     padding-left: 0;
                     padding-right: 0;
                 }
 
-                .slick-slider{
-                    .slick-arrow{
+                .slick-slider {
+                    .slick-arrow {
                         width: 25px;
                         height: 25px;
                         background-size: 25px;
 
-                        &.slick-prev{
+                        &.slick-prev {
                             right: 40px;
                         }
                     }
@@ -802,20 +806,20 @@ body {
     }
 
     /*newsModal*/
-    #newsModal{
+    #newsModal {
         display: none;
 
-        .overlay{
+        .overlay {
             position: fixed;
             z-index: 999999;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
         }
 
-        .content{
+        .content {
             width: 820px;
             height: 455px;
             position: fixed;
@@ -825,11 +829,11 @@ body {
             margin-left: -410px;
             background-color: #fff;
 
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 
-            button.close{
+            button.close {
                 position: absolute;
                 right: 10px;
                 top: 10px;
@@ -842,39 +846,39 @@ body {
                 color: #000;
                 cursor: pointer;
 
-                &:before{
+                &:before {
                     content: '✕';
                     font-size: 28px;
                     font-weight: 100;
                 }
 
-                &:focus{
+                &:focus {
                     outline: none;
                 }
             }
 
-            .cadastroNews{
+            .cadastroNews {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 455px;
 
-                .left{
+                .left {
                     width: 360px;
 
-                    img{
+                    img {
                         display: block;
                     }
                 }
 
-                .right{
+                .right {
                     width: calc(100% - 440px);
                     display: flex;
                     flex-direction: column;
                     padding: 40px;
 
-                    .top{
-                        h2{
+                    .top {
+                        h2 {
                             font-family: inherit;
                             text-transform: uppercase;
                             font-size: 34px;
@@ -883,12 +887,12 @@ body {
                             color: $segundaCor;
                             letter-spacing: normal;
 
-                            strong{
+                            strong {
                                 font-weight: 800;
                             }
                         }
 
-                        h3{
+                        h3 {
                             font-family: inherit;
                             text-transform: uppercase;
                             font-size: 20px;
@@ -898,7 +902,7 @@ body {
                             color: $segundaCor;
                         }
 
-                        p{
+                        p {
                             font-family: inherit;
                             font-size: 12px;
                             letter-spacing: normal;
@@ -907,17 +911,17 @@ body {
                             color: $segundaCor;
                             display: block;
 
-                            &.juridico{
-                              font-size: 10px;
+                            &.juridico {
+                                font-size: 10px;
                             }
                         }
 
-                        &.atacado{
-                          display: none;
+                        &.atacado {
+                            display: none;
                         }
                     }
 
-                    form{
+                    form {
                         width: calc(100% - 40px);
                         display: flex;
                         flex-direction: column;
@@ -925,10 +929,10 @@ body {
                         position: relative;
                         padding: 20px;
 
-                        input{
+                        input {
                             margin-top: 10px;
 
-                            &[type="text"]{
+                            &[type="text"] {
                                 border: 1px solid $segundaCor;
                                 width: calc(100% - 24px);
                                 height: 58px;
@@ -951,21 +955,20 @@ body {
                                     font-family: inherit;
                                 }
 
-                                &.nome{    
+                                &.nome {
                                     margin-top: 0;
                                 }
 
-                                &.email{    
-                                }
+                                &.email {}
 
-                                &.error{
-                                    &:focus{
+                                &.error {
+                                    &:focus {
                                         border-color: red;
                                     }
                                 }
                             }
 
-                            &[type="submit"]{
+                            &[type="submit"] {
                                 width: 150px;
                                 height: 60px;
                                 cursor: pointer;
@@ -987,25 +990,25 @@ body {
                                 -o-transition: all 0.5s ease;
                                 transition: all 0.5s ease;
 
-                                &:focus{
+                                &:focus {
                                     outline: none;
                                 }
 
-                                &:hover{
+                                &:hover {
                                     background-color: $segundaCor;
                                     border: 0;
                                 }
                             }
 
-                            &:focus{
+                            &:focus {
                                 outline: none;
                             }
                         }
 
-                        div.label{
+                        div.label {
                             width: 100%;
 
-                            label{
+                            label {
                                 font-family: inherit;
                                 color: $segundaCor;
                                 font-size: 14px;
@@ -1016,35 +1019,35 @@ body {
                 }
             }
 
-            &.ativo{
+            &.ativo {
                 display: block;
                 -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
-            
+
 
         }
 
         @media screen and (max-width: 920px) {
-            .content{
+            .content {
                 width: 98%;
                 height: 380px;
                 left: 1%;
                 margin-left: 0;
                 background: $white;
 
-                button.close{
+                button.close {
                     color: $black;
                 }
 
-                .cadastroNews{
+                .cadastroNews {
                     height: 100%;
 
-                    .left{
+                    .left {
                         display: none;
                     }
 
-                    .right{
+                    .right {
                         width: 100%;
                     }
                 }
@@ -1052,163 +1055,165 @@ body {
         }
     }
 
-    &.b2b{
-        section#regua .tpl-center > div.item.varejo{
+    &.b2b {
+        section#regua .tpl-center>div.item.varejo {
             display: none;
         }
 
-        section#regua .tpl-center > div.item.atacado{
+        section#regua .tpl-center>div.item.atacado {
             display: flex;
         }
 
-        section.cadastroNews .tpl-center .left.b2b{
-          display: block;
+        section.cadastroNews .tpl-center .left.b2b {
+            display: block;
         }
 
-        section.cadastroNews .tpl-center .left.b2c{
-          display: none;
+        section.cadastroNews .tpl-center .left.b2c {
+            display: none;
         }
 
-        #newsModal .content .cadastroNews .right .top.varejo{
-          display: none;
+        #newsModal .content .cadastroNews .right .top.varejo {
+            display: none;
         }
 
-        #newsModal .content .cadastroNews .right .top.atacado{
-          display: block;
+        #newsModal .content .cadastroNews .right .top.atacado {
+            display: block;
         }
     }
 
     @media screen and (max-width: 980px) {
-        &.b2b{
-            section#regua .tpl-center div.item.varejo{
-                display: none!important;
+        &.b2b {
+            section#regua .tpl-center div.item.varejo {
+                display: none !important;
             }
 
-            section#regua .tpl-center div.item.atacado{
+            section#regua .tpl-center div.item.atacado {
                 display: flex;
             }
         }
     }
 
     @media screen and (max-width: 980px) {
-        &:not(.b2b){
-            section#regua .tpl-center div.item.varejo{
+        &:not(.b2b) {
+            section#regua .tpl-center div.item.varejo {
                 display: flex;
             }
 
-            section#regua .tpl-center div.item.atacado{
-                display: none!important;
+            section#regua .tpl-center div.item.atacado {
+                display: none !important;
             }
         }
     }
 }
 
 body.home2025 {
-  section{
-    &#regua{
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #f5f7fb;
+    section {
+        &#regua {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #f5f7fb;
 
-      .tpl-center{
-        & > div.divisao{
-          width: 8px;
-          height: 8px;
-        }
+            .tpl-center {
+                &>div.divisao {
+                    width: 8px;
+                    height: 8px;
+                }
 
-        & > div.item{
-          flex-direction: row;
-          text-align: left;
+                &>div.item {
+                    flex-direction: row;
+                    text-align: left;
 
-          label{
-            font-size: 12px;
-            text-align: left;
-            margin-top: 0;
-            line-height: 115%;
-            margin-left: 5px;
+                    label {
+                        font-size: 12px;
+                        text-align: left;
+                        margin-top: 0;
+                        line-height: 115%;
+                        margin-left: 5px;
 
-            span{
-              top: 0!important;
+                        span {
+                            top: 0 !important;
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
 
-      &.bottom{
-        background-color: transparent;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: 60px;
+            &.bottom {
+                background-color: transparent;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-top: 60px;
 
-        .tpl-center{
-          justify-content: space-evenly;
-          background-color: #f5f7fb;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          max-width: 1800px;
+                .tpl-center {
+                    justify-content: space-evenly;
+                    background-color: #f5f7fb;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    max-width: 1800px;
 
-          & > div.divisao{
-            display: none!important;
-          }
+                    &>div.divisao {
+                        display: none !important;
+                    }
 
-          & > div label{
-            font-size: 14px;
-          }
-        }
-      }
-    }
-
-    &.seo{
-      max-width: 100%!important;
-
-      .tpl-center{
-        max-width: 1800px!important;
-        
-        h2.titulo{
-          text-align: left;
-          width: 100%;
-          margin: auto auto 30px;
-        }
-
-        p{
-          text-align: left;
-        }
-      }
-    }
-    
-    &.cadastroNews {
-      .tpl-center{
-        max-width: 1740px;
-        background: #f5f7fb;
-        padding: 40px;
-      }
-      @media screen and (max-width: 980px) {
-        form {
-          input[type=submit]{
-            background-color: #363435!important;
-            width: 100%;
-            order: 9;
-
-            &:hover{
-              background-color: #000!important;
+                    &>div label {
+                        font-size: 14px;
+                    }
+                }
             }
-          }
-
-          div.label{
-            margin-top: 0;
-            width: 100%;
-            text-align: left;
-            margin-bottom: 10px;
-          }
         }
-      }
-    }
-  }
 
-  &.ativoHeader{
-    header#header{
-      top: 0;
-      background-color: #fff;
+        &.seo {
+            max-width: 100% !important;
+
+            .tpl-center {
+                max-width: 1800px !important;
+
+                h2.titulo {
+                    text-align: left;
+                    width: 100%;
+                    margin: auto auto 30px;
+                }
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+
+        &.cadastroNews {
+            .tpl-center {
+                max-width: 1740px;
+                background: #f5f7fb;
+                padding: 40px;
+            }
+
+            @media screen and (max-width: 980px) {
+                form {
+                    input[type=submit] {
+                        background-color: #363435 !important;
+                        width: 100%;
+                        order: 9;
+
+                        &:hover {
+                            background-color: #000 !important;
+                        }
+                    }
+
+                    div.label {
+                        margin-top: 0;
+                        width: 100%;
+                        text-align: left;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
     }
-  }
+
+    &.ativoHeader,
+    &.whiteheader {
+        header#header {
+            top: 0;
+            background-color: #fff;
+        }
+    }
 }

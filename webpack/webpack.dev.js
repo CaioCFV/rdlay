@@ -11,9 +11,7 @@ const config = (env) => {
   return {
     entry: {
       "application.js": glob.sync(`${PATHS.scripts}/*/*.js`),
-      "0-rdy-atacado-cadastro.js": glob.sync(
-        `${PATHS.scripts}/0-rdy-atacado-cadastro.js`
-      ),
+      "atacado-cadastro.js": glob.sync(`${PATHS.scripts}/atacado-cadastro.js`),
     },
     output: {
       filename: `0-${env.STORE_ACRO}-web-[name]`,

@@ -286,7 +286,7 @@ body {
         bottom: 5px;
         left: 10px;
         z-index: 999;
-        display: flex;
+        display: none;
 
         img {
             width: 80px;
@@ -306,6 +306,12 @@ body {
 
         &.atacado {
             display: none;
+        }
+    }
+
+    &.b2c {
+        a.whatsapp.b2c {
+            display: flex;
         }
     }
 
